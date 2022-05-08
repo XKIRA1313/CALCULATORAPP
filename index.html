@@ -101,12 +101,10 @@ function updateDisplay(input) {
       display.innerHTML = display.innerHTML.slice(1, display.innerHTML.length);
     }
   } else if (input === "negativenumber") {
-
-    // if (display.innerHTML.indexOf("-1") === -1) {
-      display.innerHTML = "-" + display.innerHTML
-    // } else if (display.innerHTML.indexOf("-1" > -1)) {
-    //   display.innerHTML = display.innerHTML.slice(1, display.innerHTML.length);
-    // }
+      // negative number button pressed, only adds if it doesnt have
+      if (display.innerHTML.indexOf("-") === -1) {
+      display.innerHTML = "-" + display.innerHTML;
+    }
   } else {
     display.innerHTML += input;
   }
